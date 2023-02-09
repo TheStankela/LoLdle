@@ -1,0 +1,43 @@
+﻿@model LoldleFinal.Models.Champion
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="tablediv" class="css-table pt-2">
+    <div class="css-table-header">
+        <div>Name</div>
+        <div>Gender</div>
+        <div>Position</div>
+        <div>Range</div>
+        <div>Region</div>
+        <div>ReleaseYear</div>
+        <div>Resource</div>
+        <div>Species</div>
+    </div>
+
+    <div class="css-table-body" id="tablebodydiv">
+        
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="select-btn">
+        <span>Guess:</span>
+        <i class="uil uil-angle-down"></i>
+    </div>
+    <table class="gCT justify-content-center" id="guessedChampsTable">
+        <tbody>
+        </tbody>
+    </table>
+    <div class="content">
+        <div class="search">
+            <i class="uil uil-search"></i>
+            <input spellcheck="false" type="text" placeholder="Search">
+        </div>
+        <ul class="options"></ul>
+    </div>
+    
+</div>
+
+

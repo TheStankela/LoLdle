@@ -1,0 +1,250 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('https://world3dmap.com/wp-content/uploads/Loldle-today.webp');
+    background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+::selection {
+    color: #fff;
+    background: #4285f4;
+}
+
+.wrapper {
+    width: 370px;
+    margin: 85px auto 0;
+}
+
+.select-btn, li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-btn {
+    height: 65px;
+    padding: 0 20px;
+    font-size: 22px;
+    background: #fff;
+    border-radius: 7px;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+    .select-btn i {
+        font-size: 31px;
+        transition: transform 0.3s linear;
+    }
+
+.wrapper.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.wrapper.active .content {
+    display: block;
+}
+
+.content .search {
+    position: relative;
+}
+
+.search i {
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.search input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 20px 0 43px;
+    border: 1px solid #B3B3B3;
+}
+
+    .search input:focus {
+        padding-left: 42px;
+        border: 2px solid #4285f4;
+    }
+
+    .search input::placeholder {
+        color: #bfbfbf;
+    }
+
+.content .options {
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+}
+
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+
+.options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+
+    .options::-webkit-scrollbar-thumb:hover {
+        background: #b3b3b3;
+    }
+
+.options li {
+    height: 50px;
+    padding: 0 13px;
+    font-size: 21px;
+}
+
+    .options li:hover, li.selected {
+        border-radius: 5px;
+        background: #f2f2f2;
+    }
+
+.gCT{
+    position: absolute;
+}
+.border-bottom {
+    border-bottom: 10px;
+    border-color: black;
+}
+.div-table {
+    display: table;
+    width: 1230px;
+}
+
+.div-table-row {
+    
+    display: table-row;
+    width: 50px;
+    clear: both;
+}
+
+.div-table-col {
+    padding-top: 10px;
+    float: left;
+    display: table-column;
+    width: 150px;
+}
+
+table thead {
+    font-weight: bold;
+    background-color: rgb(191, 191, 191);
+}
+
+table th, table td {
+    padding: 0 6px;
+    text-align: center;
+}
+
+
+/* CSS TABLE STYLES */
+
+.css-table {
+    display: table;
+}
+
+.css-table-header {
+    display: table-header-group;
+    font-weight: bold;
+    
+}
+
+.css-table-body {
+    display: table-row-group;
+}
+
+.css-table-row {
+    display: table-row;
+}
+
+    .css-table-header div,
+    .css-table-row div {
+        display: table-cell;
+        font-weight: bold;
+        padding: 0 6px;
+        width: 150px;
+        height: 50px;
+        border-left: 1px solid;
+        border-bottom: 2px solid;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+.animate {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.css-table-header div {
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border: 0.7px solid;
+}
+.tilered{
+    background-color: orangered;
+}
+
+.tilegreen{
+    background-color: lawngreen;
+}
+
+.tileyellow {
+    background-color: yellow;
+}
